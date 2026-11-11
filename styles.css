@@ -1,5 +1,5 @@
-/* FORCE 8 SYSTEMS — simple editable one-page website
-   Main colours, spacing and typography can be changed in :root below. */
+/* FORCE 8 SYSTEMS — website
+   Main colours, spacing and typography specified in :root. */
 :root {
   --navy: #101c29;
   --navy-light: #203448;
@@ -43,6 +43,7 @@ main { width: min(var(--content-width), calc(100% - 2 * var(--page-gutter))); ma
 h1 { font-size: clamp(2.35rem, 5.4vw, 4.4rem); line-height: 1.08; letter-spacing: -.035em; margin: 0 0 22px; max-width: 850px; }
 .intro p { color: var(--muted); font-size: clamp(1.03rem, 1.6vw, 1.2rem); max-width: 760px; margin: 0; }
 .hero-media { position: relative; width: 100%; aspect-ratio: 16 / 9; overflow: hidden; border-radius: var(--radius); background: #1b2c3c; }
+.hero-media img { display: block; width: 100%; height: 100%; object-fit: cover; color: transparent; font-size: 0; }
 .hero-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; z-index: 2; }
 .video-fallback {
   position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center;
@@ -51,7 +52,7 @@ h1 { font-size: clamp(2.35rem, 5.4vw, 4.4rem); line-height: 1.08; letter-spacing
 }
 .video-fallback small { color: #aebdca; letter-spacing: 0; font-weight: 400; }
 .image-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 16px; }
-.image-grid img { width: 100%; aspect-ratio: 5 / 4; object-fit: cover; border-radius: var(--radius); display: block; background: var(--navy-light); }
+.image-grid img { width: 100%; aspect-ratio: 5 / 4; object-fit: cover; border-radius: var(--radius); display: block; background: var(--navy-light); color: transparent; font-size: 0;}
 .section { max-width: 850px; padding: clamp(65px, 9vw, 110px) 0; }
 .section h2 { font-size: clamp(1.8rem, 3vw, 2.4rem); margin: 0 0 16px; }
 .about h3 { font-size: clamp(1.35rem, 2.7vw, 2rem); line-height: 1.25; margin: 0 0 24px; max-width: 800px; }
